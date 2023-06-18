@@ -17,7 +17,9 @@ Program to mark the maximum of marks using the list method sort
 Developed by: vasanth s 
 RegisterNumber: 212222110052 
 def max_marks(marks):
-    return max(marks)
+    marks.sort()
+    large=marks[-1]
+    return large
 ```
 
 
@@ -29,7 +31,9 @@ Program to find the maximum marks using the list method max().
 Developed by: vasanth s
 RegisterNumber: 212222110052
 def max_marks(marks):
-    return max(marks)
+   large = max(marks)
+   return large
+
 ```
 
 iii) # To find the maximum marks without using builtin functions.
@@ -39,7 +43,12 @@ Program to the maximum marks without using builtin functions.
 Developed by: vasanth s
 RegisterNumber: 212222110052
 def max_marks(list1):
-    return max(list1)
+    
+   max=list1[0]
+   for i in list1:
+       if i >max:
+           max=i
+   return max
  ```
 ## Sample Input and Output
 ![output](./img/max_marks1.jpg) 
